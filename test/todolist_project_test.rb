@@ -1,8 +1,9 @@
+require 'bundler/setup'
 require 'minitest/autorun'
 require 'minitest/reporters'
 Minitest::Reporters.use!
 
-require_relative '../todolist_project'
+require_relative '../lib/todolist_project.rb'
 
 class TodoListTest < MiniTest::Test
   def setup
